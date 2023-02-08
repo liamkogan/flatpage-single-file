@@ -1,5 +1,5 @@
 {
-  "name": "flatpage-single-file",
+  "name": "astro-single-file",
   "version": "1.1.0",
   "description": "Astro integration that allows developers to bundle the CSS and HTML in a single file",
   "main": "index.js",
