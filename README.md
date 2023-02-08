@@ -1,7 +1,7 @@
 # Modified for Flatpages
 This packages has been modified to remove all unnecessary HTML.
 
-All flatpages should be contained within a <main> tag for this to work correctly.
+All flatpages should be contained within a **main** tag for this to work correctly.
 
 # astro-single-file
 
