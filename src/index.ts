@@ -8,7 +8,7 @@ export default function astroSingleFile(): AstroIntegration {
     hooks: {
       "astro:build:done": async ({ dir }) => {
         // Find all files in the folder recursively in the build folder
-        const folder = dir.pathname.replace("%20", " ");
+        const folder = dir.pathname.replaceAll("%20", " ");
         const files = fs.readdirSync(folder).reduce<string[]>((acc, f) => {
           const file = `${folder}${f}`;
           if (fs.statSync(file).isFile()) {

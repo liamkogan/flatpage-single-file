@@ -5,7 +5,7 @@ export default function astroSingleFile() {
         name: "astro-single-file",
         hooks: {
             "astro:build:done": async ({ dir }) => {
-                const folder = dir.pathname.replace("%20", " ");
+                const folder = dir.pathname.replaceAll("%20", " ");
                 const files = fs.readdirSync(folder).reduce((acc, f) => {
                     const file = `${folder}${f}`;
                     if (fs.statSync(file).isFile()) {
