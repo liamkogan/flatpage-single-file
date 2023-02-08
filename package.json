@@ -19,6 +19,7 @@
     "release": "./node_modules/release-it/bin/release-it.js"
   },
   "devDependencies": {
+    "@types/babel__core": "^7.20.0",
     "@types/html-minifier-terser": "^6.1.0",
     "@types/node": "^18.7.3",
     "astro": "^1.0.5",
